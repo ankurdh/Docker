@@ -1,6 +1,6 @@
 # Running a REST server in a container
 
-This project runs a simple server with Flask in the container. 
+This project runs a simple server with [Flask](http://flask.pocoo.org/) in the container. 
 
 The Flask server provides REST APIs for two paths: /add /sub
 
@@ -28,7 +28,7 @@ Each of these adds and subtracts two numbers respectively which are sent in the 
 [Fri Mar 10 17:39:26]huralikoppia ~/Docker/hello-rest>
 ```
 
-When tried to send in some POST requests: 
+When tried to send in some POST requests with [cURL](https://curl.haxx.se/): 
 ```
 [Fri Mar 10 17:37:52]huralikoppia ~> curl --data "num_1=1&num_2=1" http://127.0.0.1:1233/add
 {"sum": 2}
